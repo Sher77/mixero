@@ -416,4 +416,15 @@ select {
   padding: 10px 30px 40px 30px;
   font-size: 18px;
   line-height: 28px;
+}
+
+.section-footer {
+  background-color: rgb(32, 27, 40);
+}
+.section-footer .container {
+  padding: 30px 0;
+}
+
+.footer__copyright {
+  font-size: 14px;
 }/*# sourceMappingURL=main.css.map */

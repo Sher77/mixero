@@ -395,3 +395,19 @@ select {
     }
   }
 }
+
+/// FOOTER
+
+.section-footer {
+  background-color: $color-bg;
+
+  .container {
+    padding: 30px 0;
+  }
+}
+
+.footer {
+  &__copyright {
+    font-size: $fs-xs;
+  }
+}
