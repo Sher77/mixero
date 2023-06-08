@@ -43,7 +43,8 @@ body {
   background-image: url("../assets/img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
+  background-attachment: fixed;
 }
 
 article, aside, details, figcaption, figure,
@@ -105,8 +106,8 @@ select {
 
 .vertical-indent {
   &--s {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   &--m {
@@ -120,10 +121,27 @@ select {
   }
 }
 
+.button {
+  @include btnReset;
+
+  padding: 12px 40px;
+  font-size: $fs-l;
+  font-weight: 600;
+  background-color: $color-brand;
+  border-radius: 30px;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: darken($color-brand, 20%);
+  }
+}
+
 /// HEADER
 
 .section-header {
   background-color: $color-bg;
+  box-shadow: 0px 10px 15px rgba($color-black, 10%);
 }
 
 .header {
@@ -177,3 +195,32 @@ select {
     }
   }
 }
+
+/// HERO
+
+.section-hero {
+  .container {
+    border-bottom: 2px solid rgba($color-brand, 20%);
+  }
+}
+
+.hero {
+  &__title {
+    margin-bottom: 45px;
+    font-size: $fs-3xl;
+    font-weight: 700;
+  }
+
+  &__description {
+    margin-bottom: 110px;
+    font-size: $fs-m;
+    line-height: 22px;
+  }
+
+  &__img {
+    display: block;
+    width: 450px;
+    margin-left: auto;
+  }
+}
+
