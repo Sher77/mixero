@@ -124,6 +124,7 @@ select {
 .button {
   @include btnReset;
 
+  display: inline-block;
   padding: 12px 40px;
   font-size: $fs-l;
   font-weight: 600;
@@ -278,8 +279,8 @@ select {
   }
 }
 
-
 /// SERVICE
+
 .section-service {
   .col-md-12.col-lg-6.col-xl-3 {
     position: relative;
@@ -308,6 +309,9 @@ select {
   align-items: center;
   flex-direction: column;
 
+  &__title {
+    margin-bottom: 65px;
+  }
 
   &__icon {
     width: 200px;
@@ -319,5 +323,75 @@ select {
     font-size: $fs-s;
     line-height: 22px;
     text-align: center;
+  }
+}
+
+/// FAQ
+
+.faq {
+  &__title {
+    margin-bottom: 65px;
+  }
+
+  &-accordion {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 60px;
+
+    .card {
+      background-color: initial;
+      border: none;
+      border-bottom: 1px solid rgba($color-brand, 30%);
+      border-radius: 0;
+
+      &-header {
+        background-color: initial;
+        border: none;
+      }
+    }
+
+    &__title {
+      position: relative;
+      width: 100%;
+      font-size: $fs-2xl;
+      font-weight: 700;
+      color: $color-white;
+      text-decoration: none;
+      text-align: left;
+
+      &:hover,
+      &:focus {
+        color: currentColor;
+        box-shadow: none;
+      }
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        background-image: url("../assets/svg/arrow-down.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        content: "";
+        transform: translateY(-50%);
+        transition: transform 0.2s ease-in-out;
+      }
+
+      &:not(.collapsed) {
+        &::before {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &__description {
+      display: block;
+      padding: 10px 30px 40px 30px;
+      font-size: $fs-m;
+      line-height: 28px;
+    }
   }
 }

@@ -203,6 +203,7 @@ select {
   font: inherit;
   line-height: normal;
   cursor: pointer;
+  display: inline-block;
   padding: 12px 40px;
   font-size: 20px;
   font-weight: 600;
@@ -348,6 +349,9 @@ select {
   align-items: center;
   flex-direction: column;
 }
+.service__title {
+  margin-bottom: 65px;
+}
 .service__icon {
   width: 200px;
   margin-bottom: 20px;
@@ -357,4 +361,59 @@ select {
   font-size: 16px;
   line-height: 22px;
   text-align: center;
+}
+
+.faq__title {
+  margin-bottom: 65px;
+}
+.faq-accordion {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+.faq-accordion .card {
+  background-color: initial;
+  border: none;
+  border-bottom: 1px solid rgba(182, 0, 234, 0.3);
+  border-radius: 0;
+}
+.faq-accordion .card-header {
+  background-color: initial;
+  border: none;
+}
+.faq-accordion__title {
+  position: relative;
+  width: 100%;
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: left;
+}
+.faq-accordion__title:hover, .faq-accordion__title:focus {
+  color: currentColor;
+  box-shadow: none;
+}
+.faq-accordion__title::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-image: url("../assets/svg/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  content: "";
+  transform: translateY(-50%);
+  transition: transform 0.2s ease-in-out;
+}
+.faq-accordion__title:not(.collapsed)::before {
+  transform: rotate(180deg);
+}
+.faq-accordion__description {
+  display: block;
+  padding: 10px 30px 40px 30px;
+  font-size: 18px;
+  line-height: 28px;
 }/*# sourceMappingURL=main.css.map */
