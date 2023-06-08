@@ -137,6 +137,12 @@ select {
   }
 }
 
+.title {
+  font-size: $fs-3xl;
+  font-weight: 700;
+  text-align: center;
+}
+
 /// HEADER
 
 .section-header {
@@ -224,3 +230,48 @@ select {
   }
 }
 
+/// ADVANTAGES
+
+.advantages {
+  &__title {
+    margin-bottom: 65px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  &__item {
+    width: 500px;
+    padding: 35px 25px;
+    background: radial-gradient(ellipse at top left, $color-brand, rgb(246,158,5));
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px rgba($color-white, 10%);
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+
+  &__icon {
+    width: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__caption {
+    display: block;
+    margin-bottom: 55px;
+    font-size: $fs-l;
+    letter-spacing: 1.2px;
+  }
+
+  &__description {
+    font-size: $fs-xs;
+    line-height: 22px;
+  }
+}

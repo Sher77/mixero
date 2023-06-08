@@ -214,6 +214,12 @@ select {
   background-color: #670084;
 }
 
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
 .section-header {
   background-color: rgb(32, 27, 40);
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
@@ -279,4 +285,40 @@ select {
   display: block;
   width: 450px;
   margin-left: auto;
+}
+
+.advantages__title {
+  margin-bottom: 65px;
+}
+.advantages__list {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.advantages__item {
+  width: 500px;
+  padding: 35px 25px;
+  background: radial-gradient(ellipse at top left, rgb(182, 0, 234), rgb(246, 158, 5));
+  border-radius: 10px;
+  box-shadow: 0px 10px 40px rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+.advantages__item:hover {
+  transform: scale(1.01);
+}
+.advantages__icon {
+  width: 30px;
+  margin-bottom: 20px;
+}
+.advantages__caption {
+  display: block;
+  margin-bottom: 55px;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+}
+.advantages__description {
+  font-size: 14px;
+  line-height: 22px;
 }/*# sourceMappingURL=main.css.map */
