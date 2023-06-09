@@ -227,6 +227,10 @@ select {
   border-bottom: 2px solid rgba(182, 0, 234, 0.2);
 }
 
+.section-main {
+  flex-grow: 1;
+}
+
 .section-header {
   background-color: rgb(32, 27, 40);
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
@@ -326,23 +330,6 @@ select {
   line-height: 22px;
 }
 
-.section-service .col-md-12.col-lg-6.col-xl-3 {
-  position: relative;
-}
-.section-service .col-md-12.col-lg-6.col-xl-3:not(:last-child)::before {
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  width: 40px;
-  height: 40px;
-  background-image: url("../assets/svg/arrow-right.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  transform: translateY(-50%);
-  content: "";
-}
-
 .service {
   position: relative;
   display: flex;
@@ -361,6 +348,27 @@ select {
   font-size: 16px;
   line-height: 22px;
   text-align: center;
+}
+.service-arrow {
+  position: relative;
+}
+.service-arrow:not(:last-child)::before {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 40px;
+  height: 40px;
+  background-image: url("../assets/svg/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: translateY(-50%);
+  content: "";
+}
+@media screen and (min-width: 1999px) {
+  .service-arrow:not(:last-child)::before {
+    background-image: url("../assets/svg/arrow-down.svg");
+  }
 }
 
 .faq__title {
