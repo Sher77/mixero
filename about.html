@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
 
@@ -45,7 +45,7 @@
                 <a href="#" class="nav__link">FAQ</a>
               </li>
               <li class="li nav__item">
-                <a href="about.html" class="nav__link">About</a>
+                <a href="#" class="nav__link">About</a>
               </li>
               <li class="li nav__item">
                 <div class="dropdown">
@@ -70,122 +70,125 @@
   </header>
 
   <main class="section-main">
-    <section class="section-faq">
-      <div class="container vertical-indent--m">
-        <div class="row">
+    <section class="section-about">
+      <div class="container vertical-indent--l">
+        <div class="row about__info">
           <div class="col-12">
-            <h2 class="faq__title title underline">Frequently Asked Questions</h2>
+            <div class="about-card">
+              <img src="assets/img/bank.png" alt="Bank icon" class="about-card__img">
+              <div class="about-card__content">
+                <h3 class="about-card__title underline">Service Fees</h3>
+                <p class="about-card__description">
+                  In fact, choosing higher fees allows your transaction to have a higher priority level. Each fee value uses a different protocol allowing for faster transactions.
+                  This is an average delay of about one hour with high fees and about 3 hours with lower fees. The exact delay cannot be predicted due to variations in the blockchain.
+                </p>
+                <p class="about-card__description">
+                  The fixed fees that our technologies take 0.0003 BTC allow us to continue improving our protocols and adding features.
+                  It is necessary to send at least 0.002 BTC and a maximum of 100.00 BTC. If you send less, your money will not be sent to the destination and will be perceived as a donation.
+                </p>
+              </div>
+            </div>
+            <div class="about-card">
+              <div class="about-card__content">
+                <h3 class="about-card__title underline">No logs policy</h3>
+                <p class="about-card__description">
+                  Mixero ensures the confidentiality of your transactions, so it is our duty not to keep a record of your requests within our service.<br>
+                  Therefore, we do not keep any trace of your visit after your session expires, which lasts 24 hours.<br>
+                  We only keep the information of a transaction until it is completed and confirmed, in case of troubleshooting we have the necessary details to assist you.
+                </p>
+              </div>
+              <img src="assets/img/nologs.png" alt="Guarantee icon" class="about-card__img">
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12">
-            
-            <div class="accordion faq-accordion" id="faq-accordion">
+        <div class="row d-flex mb-5">
+          <div class="col-12 col-md-6">
+            <div class="accordion faq-accordion about-accordion" id="coinJoinAccordion">
               <div class="card">
-                <div class="card-header" id="headingOne">
+                <div class="card-header" id="coinJoinAccordion1">
                   <h2 class="mb-0">
-                    <button class="faq-accordion__title btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#FAQ-accordion" aria-expanded="true" aria-controls="collapseOne">
-                      How does Mixero work?
+                    <button class="faq-accordion__title btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#coinJoin" aria-expanded="true" aria-controls="coinJoinAccordion1">
+                      Coinjoin
                     </button>
                   </h2>
                 </div>
             
-                <div id="FAQ-accordion" class="collapse show" aria-labelledby="headingOne" data-parent="#faq-accordion">
+                <div id="coinJoin" class="collapse" aria-labelledby="coinJoinAccordion1" data-parent="#coinJoinAccordion">
                   <div class="card-body faq-accordion__description">
-                    Mixero is a secure BTC transaction service. Our mission is to make your transactions complex to track, your identity and your security on the Internet is then renforced.
+                    You should know that BTC transactions on the blockchain are transparent and the confidentiality of your transactions can be impacted.
+                  </div>
+                  <div class="card-body faq-accordion__description">
+                    To overcome this problem, Mixero uses an algorithm called CoinJoin which varies depending on the priority order of your fees. When users make transactions, Mixero protects your privacy by mixing transactions from multiple users at once, different wallets are used as gateways and never reused so that a user cannot recover previously mixed funds. Users may have the impression of being able to easily track their transaction after using Mixero, however, the origin of the funds obtained is indeed hidden and confidential.
+                  </div>
+                  <div class="card-body faq-accordion__description">
+                    Thus, our clients cannot worry about new transactions that may be mixed with old ones. This protocol guarantees the confidentiality of your exchanges on the blockchain.
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="accordion faq-accordion about-accordion" id="advancedAccordion">
               <div class="card">
-                <div class="card-header" id="headingTwo">
+                <div class="card-header" id="heading1">
                   <h2 class="mb-0">
-                    <button class="faq-accordion__title btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      How do I use the Mixero service?
+                    <button class="faq-accordion__title btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#advanced" aria-expanded="true" aria-controls="advancedAccordion1">
+                      Advanced
                     </button>
                   </h2>
                 </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faq-accordion">
+            
+                <div id="advanced" class="collapse" aria-labelledby="heading1" data-parent="#advancedAccordion">
                   <div class="card-body faq-accordion__description">
-                    To use Mixero service, you just need to enter one or more destination BTC addresses for the transaction. Then you can choose the fees you want Mixero take. To understand why you can choose different values and their functions, refer to our about page.
+                    Our advanced mode uses a rare mixing method in the world of cryptocurrencies, called "exchange" which involves exchanging funds from BTC to XMR and back to BTC. The process uses automatically generated wallets that are not linked to any exchange, making tracking the transactions extremely difficult.
                   </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <h2 class="mb-0">
-                    <button class="faq-accordion__title btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      How the Mixero protocol works?
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faq-accordion">
                   <div class="card-body faq-accordion__description">
-                    Mixero uses unique and complex protocols allowing almost secure transactions. The interest is to ensure your transactions are hidden on the Internet and protect your virtual identity. To achieve this goal, we use the popular protocol named CoinJoin. We don't use an existing CoinJoin algorithm, it's built by our own strategies.
+                    In addition, the privacy-focused cryptocurrency Monero is used, making chain analysis impossible and breaking the links with Monero addresses. The funds are also divided into random pieces, making it impossible to correlate the amount exchanged. The final result is a virtually undetectable transaction that passes through several wallets before arriving at the destination address. Mixero is very proud of the Advanced mode and highly recommends its use, as we believe it allows a higher level of privacy than the CoinJoin protocol and is strongly advised.
                   </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingFour">
-                  <h2 class="mb-0">
-                    <button class="faq-accordion__title btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Why should I secure and anonymize my transactions?
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faq-accordion">
                   <div class="card-body faq-accordion__description">
-                    It's imperative to protect yourself on the Internet, and therefore your money. Making your transactions secure and hidden will protect you from malicious hackers for example. Secondly, it's important to be the only one to know the origin of your transaction. No one should know the details of your transactions, it is a good practice to send and receive money in an unpredictable and dangerous computer world.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingFive">
-                  <h2 class="mb-0">
-                    <button class="faq-accordion__title btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                      What is the minimum and maximum amount to send?
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faq-accordion">
-                  <div class="card-body faq-accordion__description">
-                    It is necessary to send at least 0.002 BTC and maximum 100.00 BTC. If you send less, your money will not be sent to its destination for fees and will be perceived as a donation.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingSix">
-                  <h2 class="mb-0">
-                    <button class="faq-accordion__title btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                      What's the Mixero's guarantee?
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faq-accordion">
-                  <div class="card-body faq-accordion__description">
-                    You can download your Letter of Guarantee on the transaction page. It's your unique transaction proof, it's your signed transaction. In case of problem or any questions about transactions status you can send it to our support mixero.io@protonmail.com.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingSeven">
-                  <h2 class="mb-0">
-                    <button class="faq-accordion__title btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                      How does advanced mode work?
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#faq-accordion">
-                  <div class="card-body faq-accordion__description">
-                    Our advanced mode uses a rare method of mixing in the world of cryptocurrencies, called swapping which involves exchanging funds from BTC to XMR and back to BTC. The process uses automatically generated wallets that are not linked to any exchange, making it extremely difficult to trace the transactions.
+                    Mixero is very proud of the Advanced mode and highly recommends its use, as we believe it allows a higher level of privacy than the CoinJoin protocol. This is why it requires a fixed fee and a single destination address, as its design is complex. This will be improved in the future.
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="about-card">
+              <img src="assets/img/guarantee.png" alt="Guarantee icon" class="about-card__img">
+              <div class="about-card__content">
+                <h3 class="about-card__title underline">Guarantee</h3>
+                <p class="about-card__description">
+                  It is important to have proof of your transaction in case of problems, if the delay is extended, do not hesitate to contact us directly, you should not wait. Although Mixero respects the non-logging policy, you can download a guarantee letter when you send your order.
+                </p>
+                <p class="about-card__description">
+                  This letter must be sent to our support email below in case of problems in order to route the transaction in case of unexpected problems. Our support team uses the details of your transaction to resolve your issue as quickly as possible.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="contacts">
+              <p class="contacts__title underline">Donation</p>
+              <p class="contacts__description">
+                To help Mixero further evolve and provide you with the best Bitcoin mixing services, you can make a donation to our personal BTC address.
+              </p>
+              <p class="contacts__code">1MixerohmyQLNXDfvkb7obvHwTW9cSrhVU</p>
+            </div>
+          </div>
+        </div>
         <div class="row">
-          <div class="col-12 d-flex justify-content-center">
-            <a href="#" class="faq__link button">Mix Now</a>
+          <div class="col-12">
+            <div class="contacts">
+              <p class="contacts__title underline">Contact us</p>
+              <p class="contacts__description">
+                If you have any questions or encounter any problems, you can contact us via our email, mixero.io@protonmail.com.
+              </p>
+              <button class="contacts__btn button">Mix Now</button>
+            </div>
           </div>
         </div>
       </div>
@@ -205,7 +208,7 @@
                 <a href="#" class="nav__link">FAQ</a>
               </li>
               <li class="li nav__item">
-                <a href="about.html" class="nav__link">About</a>
+                <a href="#" class="nav__link">About</a>
               </li>
               <li class="li nav__item">
                 <a href="#" class="nav__link">Onion</a>

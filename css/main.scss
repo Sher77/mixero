@@ -138,6 +138,22 @@ select {
   }
 }
 
+.underline {
+  position: relative;
+  display: block;
+  padding-bottom: 25px;
+
+  &::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgba($color-brand, 50%);
+    content: "";
+  }
+}
+
 .title {
   font-size: $fs-3xl;
   font-weight: 700;

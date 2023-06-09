@@ -1,0 +1,73 @@
+.section-about {
+  padding-bottom: 100px;
+}
+
+.about-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-card:not(:last-child) {
+  margin-bottom: 80px;
+}
+.about-card__img {
+  width: 260px;
+  margin: auto;
+}
+@media screen and (max-width: 998px) {
+  .about-card__img {
+    order: -1;
+    margin-bottom: 40px;
+  }
+}
+.about-card__content {
+  flex-basis: 50%;
+}
+.about-card__title {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 600;
+}
+.about-card__description {
+  font-size: 18px;
+  line-height: 26px;
+}
+.about-card__description:not(:last-child) {
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 998px) {
+  .about-card {
+    flex-direction: column;
+  }
+}
+.about__info {
+  margin-bottom: 90px;
+}
+.about-accordion .card-header {
+  padding: 10px 0;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+.contacts__title {
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 600;
+}
+.contacts__description {
+  display: block;
+  margin-bottom: 60px;
+  font-size: 18px;
+}
+.contacts__btn {
+  align-self: center;
+}
+.contacts__code {
+  display: inline-flex;
+  align-self: center;
+  padding: 10px 5px;
+  border: 1px solid rgb(182, 0, 234);
+  border-radius: 5px;
+}/*# sourceMappingURL=about.css.map */

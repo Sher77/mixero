@@ -1,0 +1,90 @@
+@import 'variables';
+@import 'mixins';
+
+.section-about {
+  padding-bottom: 100px;
+}
+
+.about {
+  &-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 80px;
+    }
+
+    &__img {
+      width: 260px;
+      margin: auto;
+      
+      @media screen and (max-width: 998px) {
+        order: -1;
+        margin-bottom: 40px;
+      }
+    }
+    
+    &__content {
+      flex-basis: 50%;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: $fs-2xl;
+      font-weight: 600;
+    }
+
+    &__description {
+      font-size: $fs-m;
+      line-height: 26px;
+
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+
+    @media screen and (max-width: 998px) {
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    margin-bottom: 90px;
+  }
+
+  &-accordion {
+    .card-header {
+      padding: 10px 0;
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: $fs-2xl;
+    font-weight: 600;
+  }
+
+  &__description {
+    display: block;
+    margin-bottom: 60px;
+    font-size: $fs-m;
+  }
+
+  &__btn {
+    align-self: center;
+  }
+
+  &__code {
+    display: inline-flex;
+    align-self: center;
+    padding: 10px 5px;
+    border: 1px solid $color-brand;
+    border-radius: 5px;
+  }
+}
