@@ -1,0 +1,334 @@
+.mix__container {
+  max-width: 650px;
+  margin: auto;
+}
+.mix__title {
+  margin-bottom: 25px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.mix__description {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 28px;
+}
+.mix-nav .nav-tabs {
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+.mix-nav .nav-link {
+  padding: 12px 25px;
+  margin: 2px;
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 0;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+.mix-nav .nav-link.active {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(182, 0, 234);
+}
+.mix-nav .nav-link:hover, .mix-nav .nav-link:focus {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+.mix__nav {
+  margin-bottom: 40px;
+}
+.mix-form__bitcoin {
+  margin-bottom: 60px;
+}
+.mix-form__title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.mix-form__list {
+  margin-bottom: 25px;
+}
+.mix-form__item {
+  display: flex;
+  align-items: center;
+}
+.mix-form__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.mix-form__input {
+  width: 80%;
+  padding: 20px 25px;
+  margin-right: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(38, 25, 48);
+  border: 1px solid rgba(182, 0, 234, 0.3);
+  border-radius: 5px;
+}
+.mix-form__percent {
+  margin-right: 10px;
+  font-size: 16px;
+}
+.mix-form__btns {
+  display: flex;
+  align-items: center;
+}
+.mix-form__btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: background-color 0.2s ease-in-out;
+}
+.mix-form__btn--cancel {
+  background-color: rgb(255, 0, 0);
+  background-image: url("../assets/svg/close.svg");
+}
+.mix-form__btn--cancel:hover, .mix-form__btn--cancel:focus {
+  background-color: #990000;
+}
+.mix-form__btn--edit {
+  background-color: rgb(182, 0, 234);
+  background-image: url("../assets/svg/pencil.svg");
+}
+.mix-form__btn--edit:hover, .mix-form__btn--edit:focus {
+  background-color: #670084;
+}
+.mix-form__btn-address {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  cursor: pointer;
+  color: rgb(65, 233, 132);
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: color 0.2s ease-in-out;
+}
+.mix-form__btn-address:hover, .mix-form__btn-address:focus {
+  color: #14b052;
+}
+.mix-form__service {
+  margin-bottom: 40px;
+}
+.mix-form__caption {
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.mix-form__range {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.mix-form__range-inner {
+  position: relative;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.mix-form__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mix-form__value {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+}
+.mix-form__shuffle {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+}
+.mix-form__shuffle svg {
+  width: 100%;
+  height: 100%;
+  fill: rgb(255, 255, 255);
+  stroke: rgb(255, 255, 255);
+  transition: all 0.2s ease-in-out;
+}
+.mix-form__shuffle:hover svg, .mix-form__shuffle:focus svg {
+  fill: rgb(182, 0, 234);
+  stroke: rgb(182, 0, 234);
+}
+.mix-form__speed {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+.mix-form__speed--slow {
+  color: rgb(243, 152, 13);
+}
+.mix-form__speed--fast {
+  color: rgb(65, 233, 132);
+}
+.mix-form__speed--fastest {
+  color: rgb(182, 0, 234);
+}
+.mix-form__description {
+  position: relative;
+  display: block;
+  margin-bottom: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.mix-form__description::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/svg/warning.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform: translateY(-50%);
+  content: "";
+}
+.mix-form__description--advanced {
+  padding-left: 25px;
+}
+.mix-form__description--advanced::before {
+  background-image: url("../assets/svg/info.svg");
+}
+.mix-form__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.mix-form__label:not(:last-child) {
+  margin-bottom: 50px;
+}
+.mix-form__radio + .mix-form__radio-style {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(182, 0, 234);
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+.mix-form__radio:checked + .mix-form__radio-style {
+  background-color: rgb(182, 0, 234);
+}
+.mix-form__radio:disabled + .mix-form__radio-style, .mix-form__radio:disabled ~ .mix-form__radio-text {
+  opacity: 0.5;
+}
+.mix-form__radio:checked:disabled + .mix-form__radio-style {
+  background-color: rgb(182, 0, 234);
+}
+.mix-form__radio-text {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.mix-form__checkbox-text {
+  font-size: 16px;
+  letter-spacing: 1.1px;
+}
+.mix-form__checkbox-link {
+  color: rgb(182, 0, 234);
+  text-decoration: underline;
+  letter-spacing: 1.2px;
+  transition: color 0.2s ease-out;
+}
+.mix-form__checkbox-link:hover, .mix-form__checkbox-link:focus {
+  color: #8e00b7;
+}
+.mix-form__checkbox + .mix-form__checkbox-style {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+}
+.mix-form__checkbox:checked + .mix-form__checkbox-style {
+  border-color: rgb(182, 0, 234);
+  background-color: rgb(182, 0, 234);
+  background-image: url("../assets/svg/success.svg");
+}
+.mix-form__checkbox:disabled + .mix-form__checkbox-style, .mix-form__checkbox:disabled ~ .mix-form__checkbox-text {
+  opacity: 0.5;
+}
+.mix-form__btn-confirm {
+  margin-right: 10px;
+}
+.mix-form__btn-calculator {
+  border: 2px solid rgb(255, 255, 255);
+  background-color: transparent;
+}
+.mix-form__btn-calculator:hover, .mix-form__btn-calculator:focus {
+  color: rgb(182, 0, 234);
+  border-color: rgb(182, 0, 234);
+  background-color: transparent;
+}
+.mix-form__confirm {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.mix-form__select {
+  position: relative;
+  display: block;
+  width: 200px;
+  padding: 15px 25px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  background-color: rgb(38, 25, 48);
+  border: 1px solid rgba(182, 0, 234, 0.3);
+  border-radius: 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../assets/svg/arrow-d.svg");
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+  background-size: 10%;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  border-top: 2px solid rgba(182, 0, 234, 0.3);
+}
+.calculator__label {
+  display: flex;
+  flex-direction: column;
+}
+.calculator__label:not(:last-child) {
+  margin-bottom: 20px;
+}
+.calculator__text {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.calculator__input {
+  width: 100%;
+  color: rgb(255, 255, 255);
+}/*# sourceMappingURL=mix.css.map */

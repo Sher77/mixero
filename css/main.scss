@@ -130,7 +130,8 @@ select {
   font-weight: 600;
   background-color: $color-brand;
   border-radius: 30px;
-  transition: background-color 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid $color-brand;
 
   &:hover,
   &:focus {
