@@ -81,7 +81,6 @@
     &__input {
       width: 80%;
       padding: 20px 25px;
-      margin-right: 10px;
       color: $color-white;
       background-color: rgba(38, 25, 48);
       border: 1px solid rgba($color-brand, 30%);
@@ -89,7 +88,7 @@
     }
 
     &__percent {
-      margin-right: 10px;
+      margin: 0 10px;
       font-size: $fs-s;
     }
 
@@ -375,11 +374,25 @@
   }
 }
 
+@keyframes open {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: auto;
+  }
+}
+
 .calculator {
   display: flex;
   flex-direction: column;
-  padding: 30px 0;
+  max-height: 0;
+  padding: 30px 5px;
+  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
   border-top: 2px solid rgba($color-brand, 30%);
+  transition: opacity 0.3s ease-in-out, height 5s ease-in-out;
+  opacity: 0;
+  overflow: hidden;
 
   &__label {
     display: flex;
@@ -399,5 +412,10 @@
   &__input {
     width: 100%;
     color: $color-white;
+  }
+
+  &.open {
+    max-height: 610px;
+    opacity: 1;
   }
 }

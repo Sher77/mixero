@@ -58,14 +58,13 @@
 .mix-form__input {
   width: 80%;
   padding: 20px 25px;
-  margin-right: 10px;
   color: rgb(255, 255, 255);
   background-color: rgb(38, 25, 48);
   border: 1px solid rgba(182, 0, 234, 0.3);
   border-radius: 5px;
 }
 .mix-form__percent {
-  margin-right: 10px;
+  margin: 0 10px;
   font-size: 16px;
 }
 .mix-form__btns {
@@ -310,11 +309,33 @@
   background-size: 10%;
 }
 
+@-webkit-keyframes open {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: auto;
+  }
+}
+
+@keyframes open {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: auto;
+  }
+}
 .calculator {
   display: flex;
   flex-direction: column;
-  padding: 30px 0;
+  max-height: 0;
+  padding: 30px 5px;
+  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
   border-top: 2px solid rgba(182, 0, 234, 0.3);
+  transition: opacity 0.3s ease-in-out, height 5s ease-in-out;
+  opacity: 0;
+  overflow: hidden;
 }
 .calculator__label {
   display: flex;
@@ -331,4 +352,8 @@
 .calculator__input {
   width: 100%;
   color: rgb(255, 255, 255);
+}
+.calculator.open {
+  max-height: 610px;
+  opacity: 1;
 }/*# sourceMappingURL=mix.css.map */

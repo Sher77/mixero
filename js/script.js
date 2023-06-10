@@ -1,4 +1,4 @@
-if(window.innerWidth <= 1999) {
+if(window.innerWidth <= 1199) {
   document.querySelectorAll('.arrow').forEach(el => {
     el.classList.remove('service-arrow');
   })
@@ -15,3 +15,5 @@ window.addEventListener('resize', function() {
     })
   }
 })
+
+

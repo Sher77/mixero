@@ -43,7 +43,7 @@
                 <a href="index.html" class="nav__link">Home</a>
               </li>
               <li class="li nav__item">
-                <a href="#" class="nav__link">FAQ</a>
+                <a href="faq.html" class="nav__link">FAQ</a>
               </li>
               <li class="li nav__item">
                 <a href="about.html" class="nav__link">About</a>
@@ -97,30 +97,26 @@
                       <p class="mix-form__title">Destination Bitcoin address</p>
                       <ul class="mix-form__list">
                         <li class="mix-form__item">
-                          <input class="mix-form__input" name="bitcoin-address" type="number">
-                          <span class="mix-form__percent">50.00%</span>
-                          <div class="mix-form__btns visually-hidden">
-                            <button class="mix-form__btn mix-form__btn--cancel"></button>
-                            <button class="mix-form__btn mix-form__btn--edit"></button>
-                          </div>
+                          <input class="mix-form__input" name="bitcoin-address" type="number" required>
+                          <span class="mix-form__percent">100.00%</span>
                         </li>
                       </ul>
-                      <button class="mix-form__btn-address">Add Another address</button>
+                      <button class="mix-form__btn-address" type="button">Add Another address</button>
                     </div>
                     <div class="mix-form__service">
                       <p class="mix-form__caption tool">Service fees</p>
                       <div class="mix-form__range-wrap">
                         <div class="mix-form__range-inner">
-                          <input class="mix-form__range" type="range" name="service-fees">
+                          <input class="mix-form__range" type="range" name="service-fees" min="0" max="5000" step="0.001" value="1200">
                           <div class="mix-form__info">
                             <span class="mix-form__value">1.200 %</span>
-                            <button class="mix-form__shuffle">
+                            <button class="mix-form__shuffle" type="button">
                               <svg width="92" height="92" viewBox="0 0 92 92">
                                 <path d="M68.2 30C64 30 53.5 40.4 45.8 47.9 34.2 59.1 23.2 70 14.4 70H9c-2.2 0-4-1.8-4-4s1.8-4 4-4h5.4c5.6 0 16.8-11.2 25.8-19.9 11-10.6 20.5-20.1 28-20.1h5.2l-5.5-5.3c-1.6-1.6-1.6-3.9 0-5.5s4.1-1.6 5.7 0l12.3 12.3c.8.8 1.2 1.8 1.2 2.8 0 1.1-.4 2.1-1.2 2.8L73.5 41.4c-.8.8-1.8 1.1-2.8 1.1-1 0-2-.4-2.8-1.2-1.6-1.6-1.6-4.2 0-5.7l5.5-5.6h-5.2zm5.3 20.6c-1.6-1.6-4.1-1.6-5.7 0-1.6 1.6-1.6 4.2 0 5.8l5.5 5.6h-5.2c-3.3 0-8.8-4.9-14.2-9.9-1.6-1.5-4.1-1.5-5.7.1-1.5 1.6-1.4 4.3.2 5.8 8.4 7.7 14 12 19.8 12h5.2l-5.5 5.3c-1.6 1.6-1.6 4 0 5.6.8.8 1.8 1.1 2.8 1.1 1 0 2-.4 2.8-1.2l12.3-12.3c.8-.8 1.2-1.8 1.2-2.8 0-1.1-.4-2.1-1.2-2.8L73.5 50.6zM9 30h5.4c4.2 0 10.5 5.4 15.5 9.9.8.7 1.7 1.1 2.7 1.1 1.1 0 2.2-.4 3-1.3 1.5-1.6 1.4-4.3-.3-5.8-7.8-7.1-14.4-12-20.9-12H9c-2.2 0-4 1.8-4 4S6.8 30 9 30z">
                                 </path>
                               </svg>
                             </button>
-                            <span class="mix-form__speed mix-form__speed--fastest">Fast</span>
+                            <span class="mix-form__speed mix-form__speed--slow">Slowest</span>
                           </div>
                         </div>
                         <p class="mix-form__description">This mode takes 0.0003 BTC in addition to service fees.</p>
@@ -130,7 +126,7 @@
                           <span class="mix-form__radio-text tool">Random input</span>
                         </label>
                         <label class="mix-form__label">
-                          <input class="mix-form__checkbox visually-hidden" type="checkbox" name="random-input">
+                          <input class="mix-form__checkbox visually-hidden" type="checkbox" name="random-input" required>
                           <span class="mix-form__checkbox-style"></span>
                           <span class="mix-form__checkbox-text">Agree to our <a class="mix-form__checkbox-link" href="#">Terms of Service</a></span>
                         </label>
@@ -138,7 +134,7 @@
                     </div>
                     <div class="mix-form__confirm">
                       <button class="button mix-form__btn-confirm" type="submit">Proceed</button>
-                      <button class="button mix-form__btn-calculator">Calculator</button>
+                      <button class="button mix-form__btn-calculator" type="button">Calculator</button>
                     </div>
                     <div class="calculator">
                       <label class="calculator__label">
@@ -158,7 +154,7 @@
                       <p class="mix-form__title">Destination Bitcoin address</p>
                       <ul class="mix-form__list">
                         <li class="mix-form__item">
-                          <input class="mix-form__input" name="bitcoin-address" type="number">
+                          <input class="mix-form__input" name="bitcoin-address" type="number" required>
                           <span class="mix-form__percent">100.00%</span>
                         </li>
                       </ul>
@@ -171,7 +167,7 @@
                       <div class="mix-form__range-wrap">
                         <p class="mix-form__description mix-form__description--advanced">This mode provides an extra layer of privacy by XMR (Monero) bridge.</p>
                         <label class="mix-form__label">
-                          <input class="mix-form__checkbox visually-hidden" type="checkbox" name="random-input">
+                          <input class="mix-form__checkbox visually-hidden" type="checkbox" name="random-input" required>
                           <span class="mix-form__checkbox-style"></span>
                           <span class="mix-form__checkbox-text">Agree to our <a class="mix-form__checkbox-link" href="#">Terms of Service</a></span>
                         </label>
@@ -179,7 +175,7 @@
                     </div>
                     <div class="mix-form__confirm">
                       <button class="button mix-form__btn-confirm" type="submit">Proceed</button>
-                      <button class="button mix-form__btn-calculator">Calculator</button>
+                      <button class="button mix-form__btn-calculator" type="button">Calculator</button>
                     </div>
                     <div class="calculator">
                       <label class="calculator__label">
@@ -211,7 +207,7 @@
                 <a href="index.html" class="nav__link">Home</a>
               </li>
               <li class="li nav__item">
-                <a href="#" class="nav__link">FAQ</a>
+                <a href="faq.html" class="nav__link">FAQ</a>
               </li>
               <li class="li nav__item">
                 <a href="about.html" class="nav__link">About</a>
@@ -238,5 +234,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/mix.js"></script>
 </body>
 </html>
