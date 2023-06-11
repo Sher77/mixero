@@ -501,6 +501,7 @@ select {
       border-radius: 5px;
       text-align: center;
       content: attr(data-tool);
+      pointer-events: none;
       opacity: 0;
       transition: opacity 0.2s ease-in-out;
     }
