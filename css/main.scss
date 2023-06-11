@@ -244,15 +244,33 @@ select {
   }
 
   &__description {
+    position: relative;
     margin-bottom: 110px;
     font-size: $fs-m;
     line-height: 22px;
-  }
 
+    .text-wrapper {
+      position: relative;
+      display: inline-block;
+      padding-top: 0.2em;
+      padding-right: 0.05em;
+      padding-bottom: 0.1em;
+      overflow: hidden;
+    }
+
+    .letter {
+      display: inline-block;
+      line-height: 1em;
+      transform-origin: 0 0;
+    }
+  }
+  
   &__img {
     display: block;
     width: 450px;
-    margin-left: auto;
+    margin-left: auto; 
+    -webkit-animation: upNdown 2s infinite linear;
+    animation: upNdown 2s infinite linear;
   }
 }
 
@@ -317,6 +335,8 @@ select {
   &__icon {
     width: 200px;
     margin-bottom: 20px;
+    -webkit-animation: upNdown 2s infinite linear;
+    animation: upNdown 2s infinite linear;
   }
 
   &__description {
@@ -342,6 +362,8 @@ select {
         background-size: contain;
         transform: translateY(-50%);
         content: "";
+        -webkit-animation: leftNRight 2s infinite linear;
+        animation: leftNRight 2s infinite ease-out;
         
         @media screen and (min-width: 1999px) {
           background-image: url("../assets/svg/arrow-down.svg");
@@ -447,18 +469,6 @@ select {
   }
 }
 
-@keyframes spin {
-  0% {
-    transform: translate3d(0, -100%, 0);
-  }
-  50% {
-    transform: translate3d(0, 100%, 0);
-  }
-  100% {
-    transform: translate3d(0, -100%, 0);
-  }
-}
-
 .tool {
   position: relative;
   display: inline-block;
@@ -501,4 +511,30 @@ select {
       }
     }
   }
+}
+
+@-webkit-keyframes upNdown {
+  0% { }
+  50% { transform: translateY(-5px); }
+  100% { }
+}
+
+@keyframes upNdown {
+  0% { }
+  50% { transform: translateY(-5px); }
+  100% { }
+}
+
+@-webkit-keyframes leftNRight {
+  0% { left: 100%;}
+  50% { }
+  100% { opacity: 0;
+    left: 110% }
+}
+
+@keyframes leftNRight {
+  0% { left: 100%;}
+  50% { }
+  100% { opacity: 0;
+    left: 110% }
 }
