@@ -159,6 +159,10 @@
         position: relative;
         width: 300px;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 576px) {
+          width: 100%;
+        }
       }
     }
 
@@ -333,6 +337,11 @@
 
     &__btn-confirm {
       margin-right: 10px;
+
+      @media screen and (max-width: 576px) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
     }
 
     &__btn-calculator {
@@ -351,6 +360,10 @@
       display: flex;
       align-items: center;
       margin-bottom: 30px;
+
+      @media screen and (max-width: 576px) {
+        flex-direction: column;
+      }
     }
 
     &__select {
@@ -371,15 +384,6 @@
       background-position: center right 10px;
       background-size: 10%;
     }
-  }
-}
-
-@keyframes open {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: auto;
   }
 }
 

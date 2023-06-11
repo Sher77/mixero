@@ -117,7 +117,8 @@ body {
   scroll-behavior: smooth;
   line-height: 1;
   color: rgb(255, 255, 255);
-  background-image: url("../assets/img/background.jpg");
+  background-color: rgb(32, 27, 40);
+  background-image: url("../assets/img/background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -451,4 +452,71 @@ select {
 
 .footer__copyright {
   font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .footer__nav .nav__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  50% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  50% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+.tool {
+  position: relative;
+  display: inline-block;
+}
+.tool__content {
+  position: absolute;
+  display: block;
+  top: -10px;
+  right: -20px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../assets/svg/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  content: "";
+}
+.tool__content::before {
+  position: absolute;
+  z-index: 5;
+  width: 250px;
+  bottom: 200%;
+  left: 100%;
+  padding: 5px 8px;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: rgb(32, 27, 40);
+  border: 1px solid rgb(182, 0, 234);
+  border-radius: 5px;
+  text-align: center;
+  content: attr(data-tool);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.tool__content:hover::before {
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */

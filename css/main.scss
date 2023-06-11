@@ -40,7 +40,8 @@ body {
   scroll-behavior: smooth;
 	line-height: 1;
   color: $color-white;
-  background-image: url("../assets/img/background.jpg");
+  background-color: $color-bg;
+  background-image: url("../assets/img/background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -433,5 +434,71 @@ select {
 .footer {
   &__copyright {
     font-size: $fs-xs;
+  }
+
+  &__nav {
+    .nav__item {
+      &:not(:last-child) {
+        @media screen and (max-width: 768px) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  50% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.tool {
+  position: relative;
+  display: inline-block;
+  
+  &__content {
+    position: absolute;
+    display: block;
+    top: -10px;
+    right: -20px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../assets/svg/info.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    content: "";
+
+    &::before {
+      position: absolute;
+      z-index: 5;
+      width: 250px;
+      bottom: 200%;
+      left: 100%;
+      padding: 5px 8px;
+      font-size: $fs-s;
+      line-height: 20px;
+      background-color: $color-bg;
+      border: 1px solid $color-brand;
+      border-radius: 5px;
+      text-align: center;
+      content: attr(data-tool);
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+    }
+    
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+    }
   }
 }
