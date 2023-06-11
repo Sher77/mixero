@@ -504,11 +504,13 @@ select {
       pointer-events: none;
       opacity: 0;
       transition: opacity 0.2s ease-in-out;
+      visibility: hidden;
     }
     
     &:hover {
       &::before {
         opacity: 1;
+        visibility: visible;
       }
     }
   }

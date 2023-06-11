@@ -514,9 +514,11 @@ select {
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
+  visibility: hidden;
 }
 .tool__content:hover::before {
   opacity: 1;
+  visibility: visible;
 }
 
 @-webkit-keyframes upNdown {
