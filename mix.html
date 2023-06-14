@@ -98,13 +98,17 @@
               </nav>
               <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="coinjoin" role="tabpanel" aria-labelledby="coinjoin-tab">
-                  <form action="#" class="mix-form">
+                  <form action="#" class="mix-form" id="mix-form">
                     <div class="mix-form__bitcoin">
                       <p class="mix-form__title">Destination Bitcoin address</p>
                       <ul class="mix-form__list">
                         <li class="mix-form__item">
-                          <input class="mix-form__input" name="bitcoin-address" type="number" required>
-                          <span class="mix-form__percent">100.00%</span>
+                          <div class="mix-form__item-inner">
+                            <input class="mix-form__input" name="bitcoin-address" type="text" required>
+                            <label class="mix-form__percent-wrap">
+                              <input type="number" class="mix-form__percent" min="1" step=".1" max="100" value="100.00" disabled id="0">
+                            </label>
+                          </div>
                         </li>
                       </ul>
                       <button class="mix-form__btn-address" type="button">Add Another address</button>
