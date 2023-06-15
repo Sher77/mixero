@@ -136,7 +136,7 @@ select {
 
   &:hover,
   &:focus {
-    background-color: darken($color-brand, 20%);
+    background-color: darken($color-brand, 10%);
   }
 }
 
@@ -179,7 +179,6 @@ select {
 
 .section-header {
   background-color: $color-bg;
-  box-shadow: 0px 10px 15px rgba($color-black, 10%);
 }
 
 .header {

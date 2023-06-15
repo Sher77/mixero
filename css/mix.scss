@@ -103,7 +103,7 @@
       padding: 20px 25px;
       color: $color-white;
       background-color: rgba(38, 25, 48);
-      border: 1px solid rgba($color-brand, 30%);
+      border: 1px solid rgba($color-black, 30%);
       border-radius: 5px;
       outline: none;
 
@@ -176,12 +176,14 @@
       width: 28px;
       height: 28px;
       border-radius: 5px;
+      border: none;
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
       transition: background-color 0.2s ease-in-out;
 
       &--cancel {
+        margin-right: 3px;
         background-color: rgba(255, 0, 0);
         background-image: url("../assets/svg/close.svg");
 
@@ -421,6 +423,7 @@
 
     &__btn-calculator {
       border: 2px solid $color-white;
+      color: $color-brand;
       background-color: transparent;
 
       &:hover,
@@ -458,6 +461,7 @@
       background-repeat: no-repeat;
       background-position: center right 10px;
       background-size: 10%;
+      cursor: pointer;
     }
   }
 }

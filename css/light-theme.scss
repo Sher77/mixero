@@ -1,0 +1,235 @@
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+
+body {
+  background-image: url("https://i.pinimg.com/564x/70/ce/fd/70cefd5aac7d0f34a66af8b2311fc936.jpg");
+}
+
+
+.button {
+  color: $color-black;
+
+  &:hover,
+  &:focus {
+    color: $color-black;
+  }
+}
+
+.advantages {
+  &__item {
+    color: $color-black;
+  }
+}
+
+
+.service {
+  &-arrow {
+    position: relative;
+
+    &:not(:last-child) {
+      &::before {
+        background-image: url("../assets/svg/arrow-right2.svg");
+      }
+    }
+  }
+}
+
+
+.faq {
+  &-accordion {
+    &__title {
+      &::before {
+        background-image: url("../assets/svg/arrow-down2.svg");
+      }
+    }
+  }
+}
+
+
+.mix {
+  &-form {
+    &__input {
+      color: $color-black;
+      background-color: $color-brand;
+    }
+
+    &__description {
+      &::before {
+        background-image: url("../assets/svg/warning2.svg");
+      }
+
+      &--advanced {
+        &::before {
+          background-image: url("../assets/svg/info2.svg");
+        }
+      }
+    }
+
+    &__radio {
+      & + &-style {
+        background-color: $color-black;
+      }
+    }
+
+    &__btn-calculator {
+      color: $color-brand;
+      border: 2px solid $color-brand;
+
+      &:hover,
+      &:focus {
+        color: $color-brand;
+        border-color: $color-brand;
+        background-color: transparent;
+      }
+    }
+
+    &__select {
+      color: $color-black;
+      background-color: $color-brand;
+      border: 1px solid rgba($color-brand, 30%);
+      background-image: url("../assets/svg/arrow-d2.svg");
+    }
+  }
+}
+
+.input-f {
+  color: $color-black;
+  background-color: $color-brand;
+}
+
+
+.tool {
+  &__content {
+    background-image: url("../assets/svg/info2.svg");
+  }
+}
+
+.coinjoin {
+  &__desc {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    color: $color-white;
+    font-size: $fs-m;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__letter {
+    margin-bottom: 50px;
+  }
+
+  &__qr {
+    margin-bottom: 15px;
+  }
+  
+  &__blender {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    pointer-events: none;
+  }
+
+  &__input {
+    display: block;
+    width: 500px;
+    padding: 18px 15px;
+    background-color: $color-black;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+
+    &-wrap {
+      position: relative;
+      margin: 40px 0;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__copy {
+    @include btnReset;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    background-color: rgb(144, 238, 144);
+    border-radius: 20px;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-color: darken(rgb(144, 238, 144), 20%);
+    }
+
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  &__check {
+    display: block;
+    margin: 0 auto;
+    text-transform: capitalize;
+    background-color: rgb(144, 238, 144);
+    border: 1px solid rgb(144, 238, 144);
+  
+    &:hover,
+    &:focus {
+      border: 1px solid rgb(144, 238, 144);
+      background-color: darken(rgb(144, 238, 144), 20%);
+    }
+  }
+
+  &-modal {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px 20px 20px;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+      font-size: $fs-xl;
+      color: rgba(0, 0, 0, 0.65);
+      font-weight: 600;
+      font-style: italic;
+    }
+    
+    &__desc {
+      margin-bottom: 40px;
+      font-size: $fs-m;
+      color: rgba(0, 0, 0, 0.65);
+      font-weight: 300;
+      font-style: italic;
+    }
+
+    &__btn {
+      @include btnReset;
+
+      display: block;
+      align-self: flex-end;
+      padding: 15px 25px;
+      background-color: rgb(124, 209, 249);
+      border-radius: 5px;
+      color: $color-white;
+      text-transform: uppercase;
+      
+      &:hover,
+      &:focus {
+        color: currentColor;
+        background-color: lighten(rgb(124, 209, 249), 10%);
+      }
+    }
+  }
+}

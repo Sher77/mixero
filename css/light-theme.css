@@ -1,0 +1,270 @@
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Hairline"), local("Lato-Hairline"), url("../assets/fonts/latohairline.woff2") format("woff2"), url("../assets/fonts/latohairline.woff") format("woff"), url("../assets/fonts/latohairline.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Hairline Italic"), local("Lato-HairlineItalic"), url("../assets/fonts/latohairlineitalic.woff2") format("woff2"), url("../assets/fonts/latohairlineitalic.woff") format("woff"), url("../assets/fonts/latohairlineitalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Light"), local("Lato-Light"), url("../assets/fonts/latolight.woff2") format("woff2"), url("../assets/fonts/latolight.woff") format("woff"), url("../assets/fonts/latolight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Light Italic"), local("Lato-LightItalic"), url("../assets/fonts/latolightitalic.woff2") format("woff2"), url("../assets/fonts/latolightitalic.woff") format("woff"), url("../assets/fonts/latolightitalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Regular"), local("Lato-Regular"), url("../assets/fonts/latoregular.woff2") format("woff2"), url("../assets/fonts/latoregular.woff") format("woff"), url("../assets/fonts/latoregular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Italic"), local("Lato-Italic"), url("../assets/fonts/latoitalic.woff2") format("woff2"), url("../assets/fonts/latoitalic.woff") format("woff"), url("../assets/fonts/latoitalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Medium"), local("Lato-Medium"), url("../assets/fonts/latomedium.woff2") format("woff2"), url("../assets/fonts/latomedium.woff") format("woff"), url("../assets/fonts/latomedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Medium Italic"), local("Lato-MediumItalic"), url("../assets/fonts/latomediumitalic.woff2") format("woff2"), url("../assets/fonts/latomediumitalic.woff") format("woff"), url("../assets/fonts/latomediumitalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Bold"), local("Lato-Bold"), url("../assets/fonts/latobold.woff2") format("woff2"), url("../assets/fonts/latobold.woff") format("woff"), url("../assets/fonts/latobold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Bold Italic"), local("Lato-BoldItalic"), url("../assets/fonts/latobolditalic.woff2") format("woff2"), url("../assets/fonts/latobolditalic.woff") format("woff"), url("../assets/fonts/latobolditalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Black"), local("Lato-Black"), url("../assets/fonts/latoblack.woff2") format("woff2"), url("../assets/fonts/latoblack.woff") format("woff"), url("../assets/fonts/latoblack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Black Italic"), local("Lato-BlackItalic"), url("../assets/fonts/latoblackitalic.woff2") format("woff2"), url("../assets/fonts/latoblackitalic.woff") format("woff"), url("../assets/fonts/latoblackitalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+body {
+  background-image: url("https://i.pinimg.com/564x/70/ce/fd/70cefd5aac7d0f34a66af8b2311fc936.jpg");
+}
+
+.button {
+  color: rgb(255, 255, 255);
+}
+.button:hover, .button:focus {
+  color: rgb(255, 255, 255);
+}
+
+.advantages__item {
+  color: rgb(255, 255, 255);
+}
+
+.service-arrow {
+  position: relative;
+}
+.service-arrow:not(:last-child)::before {
+  background-image: url("../assets/svg/arrow-right2.svg");
+}
+
+.faq-accordion__title::before {
+  background-image: url("../assets/svg/arrow-down2.svg");
+}
+
+.mix-form__input {
+  color: rgb(255, 255, 255);
+  background-color: rgb(65, 233, 132);
+}
+.mix-form__description::before {
+  background-image: url("../assets/svg/warning2.svg");
+}
+.mix-form__description--advanced::before {
+  background-image: url("../assets/svg/info2.svg");
+}
+.mix-form__radio + .mix-form__radio-style {
+  background-color: rgb(255, 255, 255);
+}
+.mix-form__btn-calculator {
+  color: rgb(65, 233, 132);
+  border: 2px solid rgb(65, 233, 132);
+}
+.mix-form__btn-calculator:hover, .mix-form__btn-calculator:focus {
+  color: rgb(65, 233, 132);
+  border-color: rgb(65, 233, 132);
+  background-color: transparent;
+}
+.mix-form__select {
+  color: rgb(255, 255, 255);
+  background-color: rgb(65, 233, 132);
+  border: 1px solid rgba(65, 233, 132, 0.3);
+  background-image: url("../assets/svg/arrow-d2.svg");
+}
+
+.input-f {
+  color: rgb(255, 255, 255);
+  background-color: rgb(65, 233, 132);
+}
+
+.tool__content {
+  background-image: url("../assets/svg/info2.svg");
+}
+
+.coinjoin__desc {
+  margin-bottom: 20px;
+}
+.coinjoin__text {
+  margin-bottom: 15px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+.coinjoin__letter {
+  margin-bottom: 50px;
+}
+.coinjoin__qr {
+  margin-bottom: 15px;
+}
+.coinjoin__blender {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  pointer-events: none;
+}
+.coinjoin__input {
+  display: block;
+  width: 500px;
+  padding: 18px 15px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+@media screen and (max-width: 576px) {
+  .coinjoin__input {
+    width: 100%;
+  }
+}
+.coinjoin__input-wrap {
+  position: relative;
+  margin: 40px 0;
+  margin-bottom: 80px;
+}
+.coinjoin__copy {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  background-color: rgb(144, 238, 144);
+  border-radius: 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+.coinjoin__copy:hover, .coinjoin__copy:focus {
+  background-color: #38e038;
+}
+.coinjoin__copy svg {
+  width: 15px;
+  height: 15px;
+}
+.coinjoin__check {
+  display: block;
+  margin: 0 auto;
+  text-transform: capitalize;
+  background-color: rgb(144, 238, 144);
+  border: 1px solid rgb(144, 238, 144);
+}
+.coinjoin__check:hover, .coinjoin__check:focus {
+  border: 1px solid rgb(144, 238, 144);
+  background-color: #38e038;
+}
+.coinjoin-modal__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 20px 20px;
+}
+.coinjoin-modal__title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 600;
+  font-style: italic;
+}
+.coinjoin-modal__desc {
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 300;
+  font-style: italic;
+}
+.coinjoin-modal__btn {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  cursor: pointer;
+  display: block;
+  align-self: flex-end;
+  padding: 15px 25px;
+  background-color: rgb(124, 209, 249);
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+.coinjoin-modal__btn:hover, .coinjoin-modal__btn:focus {
+  color: currentColor;
+  background-color: #ade2fb;
+}/*# sourceMappingURL=light-theme.css.map */
