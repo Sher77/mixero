@@ -1,0 +1,19 @@
+This message has been signed with our signature 1MixerohmyQLNXDfvkb7obvHwTW9cSrhVU
+
+-----START DATE-----
+Thu, 15 Jun 2023 10:56:52 +0300
+-----END DATE----- 
+
+-----START LETTER OF GUARANTEE-----
+Here is your letter of guarantee. Keep it carefully as it represents the unique proof of your transaction. Mixero confirms that the following address: bc1qasgfgz4le5apg002gcsy7fdck2m6484s6j993j has been generated in order to receive your funds at the destination address indicated.
+-----END LETTER OF GUARANTEE-----
+
+-----START SIGNATURE-----
+fd8c8d9f6239dc2a825fa2f8106e73531407b2cabf5e0f863dabff5c528fe994
+-----END SIGNATURE-----
+
+-----START ADDRESS FOR SENDING BTC-----
+bc1qasgfgz4le5apg002gcsy7fdck2m6484s6j993j
+-----END ADDRESS FOR SENDING BTC-----
+
+You need to send the letter of guarantee in case of problem within 24 hours of your payment. Please note that failure to do so will render the letter obsolete and unusable in accordance with our Confidentiality of Data.

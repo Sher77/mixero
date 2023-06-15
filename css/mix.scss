@@ -1,6 +1,17 @@
 @import 'variables';
 @import 'mixins';
 
+.input-f {
+  display: block;
+  width: 80%;
+  padding: 20px 25px;
+  color: $color-white;
+  background-color: rgba(38, 25, 48);
+  border: 1px solid rgba($color-brand, 30%);
+  border-radius: 5px;
+  outline: none;
+}
+
 .mix {
   &__container {
     max-width: 650px;
@@ -146,6 +157,10 @@
         font-weight: 500;
         color: red;
       }
+    }
+
+    &__text {
+      margin: 0 10px;
     }
 
     &__btns {

@@ -72,6 +72,9 @@
             </ul>
           </nav>
         </div>
+        <div class="col-12 col-md-3 d-flex justify-content-end">
+          <div class="coin"></div>
+        </div>
       </div>
     </div>
   </header>
@@ -98,7 +101,7 @@
               </nav>
               <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="coinjoin" role="tabpanel" aria-labelledby="coinjoin-tab">
-                  <form action="#" class="mix-form" id="mix-form">
+                  <form action="invoice_coinjoin.html" class="mix-form" id="mix-form">
                     <div class="mix-form__bitcoin">
                       <p class="mix-form__title">Destination Bitcoin address</p>
                       <ul class="mix-form__list">
@@ -155,23 +158,25 @@
                     <div class="calculator">
                       <label class="calculator__label">
                         <span class="calculator__text">You send:</span>
-                        <input class="calculator__input mix-form__input" value="1" type="number" name="sended-bitcoin">
+                        <input class="calculator__input input-f" value="1" type="text" name="sended-bitcoin">
                       </label>
                       <label class="calculator__label">
                         <span class="calculator__text">You receive:</span>
-                        <input class="calculator__input mix-form__input" value="~3.95180000 BTC" disabled>
+                        <input class="calculator__input calculator__input-receive input-f" value="~0.97280000 BTC" disabled>
                       </label>
                     </div>
                   </form>
                 </div>
                 <div class="tab-pane fade" id="advanced" role="tabpanel" aria-labelledby="advanced-tab">
-                  <form action="#" class="mix-form">
+                  <form action="invoice_coinjoin.html" class="mix-form">
                     <div class="mix-form__bitcoin">
                       <p class="mix-form__title">Destination Bitcoin address</p>
                       <ul class="mix-form__list">
                         <li class="mix-form__item">
-                          <input class="mix-form__input" name="bitcoin-address" type="number" required>
-                          <span class="mix-form__percent">100.00%</span>
+                          <div class="mix-form__item-inner">
+                            <input class="mix-form__input" name="bitcoin-address" type="text" required>
+                            <span class="mix-form__text">100.00%</span>
+                          </div>
                         </li>
                       </ul>
                     </div>
@@ -198,11 +203,11 @@
                     <div class="calculator">
                       <label class="calculator__label">
                         <span class="calculator__text">You send:</span>
-                        <input class="calculator__input mix-form__input" value="1" type="number" name="sended-bitcoin">
+                        <input class="calculator__input input-f" value="1" type="number" name="sended-bitcoin">
                       </label>
                       <label class="calculator__label">
                         <span class="calculator__text">You receive:</span>
-                        <input class="calculator__input mix-form__input" value="~3.95180000 BTC" disabled>
+                        <input class="calculator__input calculator__input-receive input-f" value="~0.97280000 BTC" disabled>
                       </label>
                     </div>
                   </form>

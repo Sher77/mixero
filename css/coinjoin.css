@@ -1,0 +1,122 @@
+.coinjoin__desc {
+  margin-bottom: 20px;
+}
+.coinjoin__text {
+  margin-bottom: 15px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+.coinjoin__letter {
+  margin-bottom: 50px;
+}
+.coinjoin__qr {
+  margin-bottom: 15px;
+}
+.coinjoin__blender {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  pointer-events: none;
+}
+.coinjoin__input {
+  display: block;
+  width: 500px;
+  padding: 18px 15px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+@media screen and (max-width: 576px) {
+  .coinjoin__input {
+    width: 100%;
+  }
+}
+.coinjoin__input-wrap {
+  position: relative;
+  margin: 40px 0;
+  margin-bottom: 80px;
+}
+.coinjoin__copy {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  background-color: rgb(144, 238, 144);
+  border-radius: 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+.coinjoin__copy:hover, .coinjoin__copy:focus {
+  background-color: #38e038;
+}
+.coinjoin__copy svg {
+  width: 15px;
+  height: 15px;
+}
+.coinjoin__check {
+  display: block;
+  margin: 0 auto;
+  text-transform: capitalize;
+  background-color: rgb(144, 238, 144);
+  border: 1px solid rgb(144, 238, 144);
+}
+.coinjoin__check:hover, .coinjoin__check:focus {
+  border: 1px solid rgb(144, 238, 144);
+  background-color: #38e038;
+}
+.coinjoin-modal__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 20px 20px;
+}
+.coinjoin-modal__title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 600;
+  font-style: italic;
+}
+.coinjoin-modal__desc {
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 300;
+  font-style: italic;
+}
+.coinjoin-modal__btn {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  cursor: pointer;
+  display: block;
+  align-self: flex-end;
+  padding: 15px 25px;
+  background-color: rgb(124, 209, 249);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+.coinjoin-modal__btn:hover, .coinjoin-modal__btn:focus {
+  color: currentColor;
+  background-color: #ade2fb;
+}/*# sourceMappingURL=coinjoin.css.map */

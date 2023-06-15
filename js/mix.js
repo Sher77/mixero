@@ -124,25 +124,36 @@ function addBitcoinAddress() {
           })
         }
       });
-      
-      document.querySelectorAll('#mix-form .mix-form__list .mix-form__input').forEach(input => {
-        input.addEventListener('input', e => {
-          const inputValue = input.value;
 
-          const pattern = /^[A-Za-z0-9]{28,36}$/;
-
-          if(pattern.test(inputValue)) {
-            input.classList.remove('error');
-          } else {
-            input.classList.add('error');
-          }
-        });
-      });
+      document.querySelectorAll('input.mix-form__input').forEach(validateInput);
     }
   });
 }
   
 addBitcoinAddress();
+
+const mixFormInputs = document.querySelectorAll('input.mix-form__input');
+
+
+function validateInput() {
+  const mixFormInputs = document.querySelectorAll('input.mix-form__input');
+
+  mixFormInputs.forEach(input => {
+    input.addEventListener('input', e => {
+      const inputValue = input.value;
+    
+      const pattern = /^[A-Za-z0-9]{28,36}$/;
+    
+      if(pattern.test(inputValue)) {
+        input.classList.remove('error');
+      } else {
+        input.classList.add('error');
+      }
+    });
+  })
+}
+
+validateInput();
 
 
 function changeRangeCategory() {
@@ -172,11 +183,33 @@ changeRangeCategory();
 
 function showCalculator() {
   const calculatorBtns = document.querySelectorAll('.mix-form__btn-calculator');
+  const calculatorInputs = document.querySelectorAll('.calculator .calculator__input');
 
   calculatorBtns.forEach(btn => {
     btn.addEventListener('click', e => {
       const calculatorContent = e.currentTarget.parentElement.nextElementSibling;
       calculatorContent.classList.toggle('open');
+    });
+  });
+
+  calculatorInputs.forEach(input => {
+    input.addEventListener('input', e => {
+      const target = e.currentTarget;
+      const receiveInput = target.parentElement.nextElementSibling.querySelector('.calculator__input-receive');
+      const bitcoin = target.value;
+      const percent = 2;
+      const commission = bitcoin * (percent / 100);
+
+      console.log(receiveInput);
+      const pattern = /^\d+$/;
+
+      if(pattern.test(bitcoin)) {
+        receiveInput.classList.remove('error');
+        receiveInput.value = `~${(bitcoin - commission).toFixed(8)} BTC`;
+      } else {
+        receiveInput.classList.add('error');
+        receiveInput.value = 'Invalid Amount';
+      }
     });
   });
 }
@@ -211,3 +244,27 @@ function redistributeValues(inputs, index, newValue) {
   return inputs;
 }
 
+// Функция получения курса криптовалюты
+function getPriceOfСryptourrency(coin, currencys) {
+  const url = `https://min-api.cryptocompare.com/data/price?fsym=${coin}&tsyms=${currencys}&api_key={aafc206b5bbcbdfa0c86fb4ee8c5f3294f5adc07bc3899794b1941f6c772f591}`
+
+  return fetch(url).then(response => {
+    return response.json();
+  })
+}
+
+
+// Функция показа полученного курса
+function showCoin() {
+  const coinEl = document.querySelector('.coin');
+
+  getPriceOfСryptourrency('BTC', ['USD', 'EUR'])
+  .then(data => {
+    coinEl.textContent = `BTC - ${data.USD}$`;
+  })
+  .catch(error => { 
+    coinEl.textContent = '';
+  });
+}
+
+showCoin();
