@@ -2,9 +2,9 @@
   display: block;
   width: 80%;
   padding: 20px 25px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   background-color: rgb(38, 25, 48);
-  border: 1px solid rgba(65, 233, 132, 0.3);
+  border: 1px solid rgba(182, 0, 234, 0.3);
   border-radius: 5px;
   outline: none;
 }
@@ -32,18 +32,18 @@
   padding: 12px 25px;
   margin: 2px;
   background-color: transparent;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 0;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
 .mix-nav .nav-link.active {
   background-color: transparent;
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(65, 233, 132);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(182, 0, 234);
 }
 .mix-nav .nav-link:hover, .mix-nav .nav-link:focus {
-  background-color: rgba(0, 0, 0, 0.2) !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
 }
 .mix__nav {
   margin-bottom: 40px;
@@ -77,9 +77,9 @@
   display: block;
   width: 80%;
   padding: 20px 25px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   background-color: rgb(38, 25, 48);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   outline: none;
 }
@@ -92,7 +92,7 @@
   padding: 2px;
   margin: 0 10px;
   font-size: 16px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   background-color: transparent;
 }
 .mix-form__percent::-webkit-outer-spin-button, .mix-form__percent::-webkit-inner-spin-button {
@@ -104,7 +104,7 @@
 }
 .mix-form__percent:not(:disabled) {
   border-radius: 5px;
-  border: 1px solid rgba(65, 233, 132, 0.4);
+  border: 1px solid rgba(182, 0, 234, 0.4);
 }
 .mix-form__percent-wrap {
   position: relative;
@@ -115,7 +115,7 @@
   top: 50%;
   right: 20px;
   font-size: 16px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   transform: translateY(-50%);
   content: "%";
 }
@@ -155,11 +155,11 @@
   background-color: #990000;
 }
 .mix-form__btn--edit {
-  background-color: rgb(65, 233, 132);
+  background-color: rgb(182, 0, 234);
   background-image: url("../assets/svg/pencil.svg");
 }
 .mix-form__btn--edit:hover, .mix-form__btn--edit:focus {
-  background-color: #14b052;
+  background-color: #670084;
 }
 .mix-form__btn-address {
   border: none;
@@ -172,13 +172,13 @@
   font: inherit;
   line-height: normal;
   cursor: pointer;
-  color: rgb(182, 0, 234);
+  color: rgb(65, 233, 132);
   font-size: 16px;
   text-transform: capitalize;
   transition: color 0.2s ease-in-out;
 }
 .mix-form__btn-address:hover, .mix-form__btn-address:focus {
-  color: #670084;
+  color: #14b052;
 }
 .mix-form__service {
   margin-bottom: 40px;
@@ -229,13 +229,13 @@
 .mix-form__shuffle svg {
   width: 100%;
   height: 100%;
-  fill: rgb(0, 0, 0);
-  stroke: rgb(0, 0, 0);
+  fill: rgb(255, 255, 255);
+  stroke: rgb(255, 255, 255);
   transition: all 0.2s ease-in-out;
 }
 .mix-form__shuffle:hover svg, .mix-form__shuffle:focus svg {
-  fill: rgb(65, 233, 132);
-  stroke: rgb(65, 233, 132);
+  fill: rgb(182, 0, 234);
+  stroke: rgb(182, 0, 234);
 }
 .mix-form__speed {
   font-size: 18px;
@@ -246,10 +246,10 @@
   color: rgb(243, 152, 13);
 }
 .mix-form__speed--fast {
-  color: rgb(182, 0, 234);
+  color: rgb(65, 233, 132);
 }
 .mix-form__speed--fastest {
-  color: rgb(65, 233, 132);
+  color: rgb(182, 0, 234);
 }
 .mix-form__description {
   position: relative;
@@ -292,19 +292,19 @@
   width: 25px;
   height: 25px;
   margin-right: 5px;
-  background-color: rgb(0, 0, 0);
-  border: 3px solid rgb(65, 233, 132);
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(182, 0, 234);
   border-radius: 50%;
   transition: all 0.2s ease-in-out;
 }
 .mix-form__radio:checked + .mix-form__radio-style {
-  background-color: rgb(65, 233, 132);
+  background-color: rgb(182, 0, 234);
 }
 .mix-form__radio:disabled + .mix-form__radio-style, .mix-form__radio:disabled ~ .mix-form__radio-text {
   opacity: 0.5;
 }
 .mix-form__radio:checked:disabled + .mix-form__radio-style {
-  background-color: rgb(65, 233, 132);
+  background-color: rgb(182, 0, 234);
 }
 .mix-form__radio-text {
   font-size: 18px;
@@ -315,20 +315,20 @@
   letter-spacing: 1.1px;
 }
 .mix-form__checkbox-link {
-  color: rgb(65, 233, 132);
+  color: rgb(182, 0, 234);
   text-decoration: underline;
   letter-spacing: 1.2px;
   transition: color 0.2s ease-out;
 }
 .mix-form__checkbox-link:hover, .mix-form__checkbox-link:focus {
-  color: #1add68;
+  color: #8e00b7;
 }
 .mix-form__checkbox + .mix-form__checkbox-style {
   display: block;
   width: 20px;
   height: 20px;
   margin-right: 5px;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 5px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -336,8 +336,8 @@
   transition: all 0.3s ease-in-out;
 }
 .mix-form__checkbox:checked + .mix-form__checkbox-style {
-  border-color: rgb(65, 233, 132);
-  background-color: rgb(65, 233, 132);
+  border-color: rgb(182, 0, 234);
+  background-color: rgb(182, 0, 234);
   background-image: url("../assets/svg/success.svg");
 }
 .mix-form__checkbox:disabled + .mix-form__checkbox-style, .mix-form__checkbox:disabled ~ .mix-form__checkbox-text {
@@ -353,13 +353,13 @@
   }
 }
 .mix-form__btn-calculator {
-  border: 2px solid rgb(0, 0, 0);
-  color: rgb(65, 233, 132);
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   background-color: transparent;
 }
 .mix-form__btn-calculator:hover, .mix-form__btn-calculator:focus {
-  color: rgb(65, 233, 132);
-  border-color: rgb(65, 233, 132);
+  color: rgb(182, 0, 234);
+  border-color: rgb(182, 0, 234);
   background-color: transparent;
 }
 .mix-form__confirm {
@@ -380,9 +380,9 @@
   margin-bottom: 40px;
   font-size: 20px;
   font-weight: 500;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   background-color: rgb(38, 25, 48);
-  border: 1px solid rgba(65, 233, 132, 0.3);
+  border: 1px solid rgba(182, 0, 234, 0.3);
   border-radius: 5px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -400,7 +400,7 @@
   max-height: 0;
   padding: 30px 5px;
   transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
-  border-top: 2px solid rgba(65, 233, 132, 0.3);
+  border-top: 2px solid rgba(182, 0, 234, 0.3);
   transition: opacity 0.3s ease-in-out, height 5s ease-in-out;
   opacity: 0;
   overflow: hidden;
@@ -419,7 +419,7 @@
 }
 .calculator__input {
   width: 100%;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .calculator.open {
   max-height: 610px;
